@@ -1,0 +1,6 @@
+---
+ - name: delete group
+   hosts: all
+   tasks:
+     - name: delete group
+       group: name=bat22 gid=500 state=absent

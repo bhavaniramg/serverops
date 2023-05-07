@@ -1,0 +1,10 @@
+---
+ - name: using register module
+   hosts: all
+   tasks:
+     - name: server kernel
+       command: uname -a
+       register: output
+     - debug: var=output
+     - debug: msg= "the kernel version is {{output}}"
+...

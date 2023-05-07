@@ -1,0 +1,10 @@
+---
+ - name: check the kernel version
+   hosts: all
+   tasks:
+     - name: server kernel is
+       shell: uname -r
+       register: kernel
+     - debug: var=kernel.stdout
+     - debug: msg= "the kernel version is {{kernel.stdout}}"
+...

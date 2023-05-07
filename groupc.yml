@@ -1,0 +1,6 @@
+---
+ - name: creating group 
+   hosts: all
+   tasks:
+     - name: create group
+       group: name=bat22 gid=500 state=present

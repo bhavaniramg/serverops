@@ -1,0 +1,8 @@
+---
+ - name: installing packages using yum
+   hosts: all
+   tasks:
+     - name: install httpd package
+       yum: pkg=httpd state=present
+     - yum: pkg=vsftpd state=present
+     - yum: pkg=samba state=present

@@ -1,0 +1,7 @@
+---
+ - name: fetch from clients
+   hosts: all
+   tasks:
+     - name: fetch all clients
+       fetch: src=/tmp/output dest=/outputs/may5/ flat=yes
+...

@@ -1,0 +1,8 @@
+---
+ - name: updating packages
+   hosts: all
+   tasks:
+     - name: updating packages
+       yum: pkg=httpd state=latest
+     - yum: pkg=vsftpd state=latest
+...

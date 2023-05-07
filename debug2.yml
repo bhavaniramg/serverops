@@ -1,0 +1,10 @@
+---
+ - name: display mutliple messages
+   hosts: all
+   tasks:
+     - name: display multiple messages
+       debug:
+       msg:
+         - "Welcome to Varains"
+         - "Welcome to Nareshins"
+         - "Welcome to Deloitte"

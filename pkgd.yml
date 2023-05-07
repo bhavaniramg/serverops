@@ -1,0 +1,8 @@
+---
+ - name: removing or uninstalling packages
+   hosts: all
+   tasks:
+     - name: uninstall packages
+       yum: pkg=samba state=absent
+     - yum: name=vsftpd state=absent
+...

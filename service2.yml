@@ -1,0 +1,9 @@
+---
+ - name: stopping services
+   hosts: all
+   tasks:
+     - name: stop services and disable
+       service: name=httpd state=stopped enabled=no
+     - service: name=vsfptd state=stopped enabled=no
+     - service: name=samba state=stopped enabled=no
+...

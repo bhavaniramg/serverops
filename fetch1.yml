@@ -1,0 +1,7 @@
+---
+ - name: fetch/download files from client hosts
+   hosts: all
+   tasks:
+    - name: pull/download files from client hosts
+      fetch: src=/tmp/output dest=/outputs/
+...

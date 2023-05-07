@@ -1,0 +1,12 @@
+---
+ - name: showing variables
+   hosts: all
+   vars:
+     os: "linux"
+     cloud: "aws"
+     tools: "devOps"
+   tasks:
+     - debug: msg= "I have learnt {{os}} os"
+     - debug: msg= "I have learnt {{cloud}} in cloud"
+     - debug: msg= "I will learn {{tools}}"
+...

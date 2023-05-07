@@ -1,0 +1,10 @@
+---
+ - name: file level variables
+   hosts: all
+   vars:
+     os: "linux"
+   tasks:
+     - name: file level variables
+       debug:
+         msg: "my operating system is {{os}}"
+...

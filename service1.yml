@@ -1,0 +1,9 @@
+---
+ - name: start services
+   hosts: all
+   tasks:
+     - name: start multiple services and enable
+       service: name=httpd state=started enabled=yes
+     - service: name=vsftpd state=started enabled=yes
+     - service: name=samba state=started enabled=yes
+...

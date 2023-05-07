@@ -1,0 +1,8 @@
+---
+ - name: restart services
+   hosts: all
+   tasks:
+     - name: restarting services
+       service: name=httpd state=restarted
+     - service: name=vsftpd state=restarted
+...
