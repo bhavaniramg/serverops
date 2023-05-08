@@ -9,4 +9,3 @@
      - debug: msg= "I have learnt {{os}} os"
      - debug: msg= "I have learnt {{cloud}} in cloud"
      - debug: msg= "I will learn {{tools}}"
-...
