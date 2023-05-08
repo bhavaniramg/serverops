@@ -4,3 +4,4 @@
    tasks:
     - name: create directory
       file: dest=/tmp/dir1 state=directory
+...        
