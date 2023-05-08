@@ -3,3 +3,4 @@
    hosts: all
    tasks:
     - file: dest=/tmp/file1 state=touch
+...      
