@@ -4,5 +4,3 @@
    tasks:
      - name: copying /etc/fstab file to /tmp
        copy: src=/etc/fstab dest=/tmp/
-...
-
