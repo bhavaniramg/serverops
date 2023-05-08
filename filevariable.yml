@@ -7,4 +7,3 @@
      - name: file level variables
        debug:
          msg: "my operating system is {{os}}"
-...
