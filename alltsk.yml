@@ -21,4 +21,3 @@
        shell: hostname
        register: host
      - debug: var= hostname.stdout
-...
